@@ -3750,7 +3750,7 @@
     }
   };
 
-  jQuery.expr[':'].nicescroll = function(a) {
+  jQuery.expr.pseudos.nicescroll = function(a) {
     return $.data(a, '__nicescroll') !== undefined;
   };
 
