@@ -1887,7 +1887,7 @@
               //self.cursorh && self.bind(self.cursorh, "mousemove", self.onmousemove);
               self.cursorh && self.bind(self.cursorh, "mouseup", self.onmouseup);
             } else {
-              self.bind(self.rail, "mousedown", function(e){e.preventDefault();});  // prevent text selection             
+              self.bind(self.rail, "mousedown", function(e){e.preventDefault();});  // prevent text selection
 							self.railh&&self.bind(self.railh, "mousedown", function(e){e.preventDefault();});
             }
 
@@ -2484,7 +2484,7 @@
         f: fn,
         q: true
       });
-      $(dom).bind(name, fn);
+      $(dom).on(name, fn);
     };
     
     this.mousewheel = function(dom, fn, bubble) { // bind mousewheel
